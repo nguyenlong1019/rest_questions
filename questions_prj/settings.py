@@ -27,8 +27,6 @@ DEBUG = True
 
 # ALLOWED_HOSTS = []
 
-
-
 ALLOWED_HOSTS = ['https://restquestions-production.up.railway.app/', 'restquestions-production.up.railway.app']
 
 CSRF_COOKIE_SECURE = True
@@ -106,15 +104,15 @@ DATABASES = {
     }
 }
 
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
-    ],
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.BasicAuthentication',
-    ],
-}
+# REST_FRAMEWORK = {
+#     'DEFAULT_PERMISSION_CLASSES': [
+#         'rest_framework.permissions.IsAuthenticated',
+#     ],
+#     'DEFAULT_AUTHENTICATION_CLASSES': [
+#         'rest_framework.authentication.SessionAuthentication',
+#         'rest_framework.authentication.BasicAuthentication',
+#     ],
+# }
 
 
 # Password validation
