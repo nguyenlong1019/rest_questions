@@ -67,7 +67,7 @@ class QuestionList(View):
             return JsonResponse({
                 'id': question.id,
                 'subject': question.subject_id,
-                'question_text': question.question_text,
+                'question': question.question_text,
                 'true_answer': question.true_answer,
                 'false_answer1': question.false_answer1,
                 'false_answer2': question.false_answer2,
@@ -89,7 +89,7 @@ class QuestionDetail(View):
         return JsonResponse({
             'id': question.id,
             'subject': question.subject_id,
-            'question_text': question.question_text,
+            'question': question.question_text,
             'true_answer': question.true_answer,
             'false_answer1': question.false_answer1,
             'false_answer2': question.false_answer2,
@@ -110,7 +110,7 @@ class QuestionDetail(View):
             return JsonResponse({
                 'id': question.id,
                 'subject': question.subject_id,
-                'question_text': question.question_text,
+                'question': question.question_text,
                 'true_answer': question.true_answer,
                 'false_answer1': question.false_answer1,
                 'false_answer2': question.false_answer2,
