@@ -1,0 +1,1 @@
+web: gunicorn questions_prj.wsgi
